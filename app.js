@@ -20,3 +20,10 @@ function exibirLista() {
     }
     ulAmigos.innerHTML = listaStr;
 }
+
+function sortearAmigo() {
+    let ulResultado = document.getElementById("resultado");
+    let index = parseInt(Math.random() * nomes.length);
+    console.log(index);
+    ulResultado.innerHTML = `<li>${nomes[index]}</li>`;
+}
